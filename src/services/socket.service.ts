@@ -10,7 +10,10 @@ export class SocketService {
   private serverUrl: string = environment.apiUrl
 
   constructor() {
-    this.socket = io(this.serverUrl);
+    this.socket = io(this.serverUrl, {
+      path: '/web/socket.io/',
+      transports: ['websocket', 'polling'],
+    });
   }
 
   sendMessage(event: string, data: any) {
