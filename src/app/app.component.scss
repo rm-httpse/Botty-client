@@ -1,0 +1,77 @@
+body {
+  margin: 0
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.console-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.messages-container {
+  overflow: scroll;
+  flex-grow: 1;
+}
+
+.messages {
+  flex-grow: 1;
+  margin-bottom: 4px;
+}
+
+.bot-msg .sender {
+  color: magenta;
+}
+
+.user-msg .sender {
+  color: blue;
+}
+
+.sender {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0px 0 0px;
+  gap: 8px
+}
+
+.input-area input {
+  flex-grow: 1;
+}
+
+.input-area button {
+  padding: 10px 20px;
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+}
+
+.img-container {
+  max-width: 65%;
+}
+
+.bot-image {
+  width: 100%;
+}
